@@ -1,0 +1,472 @@
+@import url("https://fonts.google.com/specimen/Kumbh+Sans");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --range: hsl(26, 100%, 55%);
+  --paleOrange: hsl(25, 100%, 94%);
+  --veryDarkBlue: hsl(220, 13%, 13%);
+  --darkGrayishBlue: hsl(219, 9%, 45%);
+  --grayishBlue: hsl(220, 14%, 75%);
+  --lightGrayishBlue: hsl(223, 64%, 98%);
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%);
+}
+
+body {
+  padding: 2em;
+  font-family: "Kumbh Sans", sans-serif;
+  background-image: url("./images/image-product-1.jpg");
+  background-color: rgba(255, 255, 255, 0.8);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top 4.5em;
+}
+
+nav,
+.phase1,
+.phase2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+.phase1 {
+  padding-right: 14em;
+  gap: 1em;
+}
+.phase2 {
+  gap: 1em;
+}
+.profile,
+.title {
+  position: relative;
+}
+.profile > img {
+  width: 1.5em;
+}
+ sup{
+  /* display: none; */
+  width: 1em;
+  margin-bottom: 1em;
+  height: 1em;
+  border-radius: 50%;
+  border: 1px solid var(--range);
+  background-color:var(--range) ;
+  color: var(--White);
+}
+.profile > img:hover{
+  border-radius: 50%;
+  border: 1px solid var(--range);
+}
+.title h1,
+.profile > img {
+  position: absolute;
+  bottom: 0.1rem;
+}
+#logo-itself,
+#close-btn {
+  transition: all 0.3ms;
+}
+/* Menu */
+.menu-cont {
+  position: relative;
+  display: none;
+    /* z-index: 1; */
+}
+.menu-hold {
+  position: absolute;
+  bottom: -51em;
+  right: 8em;
+}
+.lii-hold{
+  position: relative;
+  z-index: 1; */
+}
+.li-dem{
+  position: absolute;
+  z-index: 2;
+}
+.menu-hold ul {
+  display: block;
+  justify-content: space-evenly;
+  background-color: #fff;
+  padding-left: 2em;
+  width: 15em;
+  height: 54em;
+}
+.menu-hold > ul img {
+  padding-left: 2em;
+}
+.menu-hold > ul li {
+  list-style: none;
+  margin-top: 1.5em;
+  font-weight: 600;
+ padding-left: 2em;
+  color: var(--Black);
+}
+.li-dem {
+  margin-top: 2em;
+}
+/* //pops */
+.pop-Cont{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.pop-Cont > div h3 {
+  border-bottom: 0.7px solid #d3d3d3;
+}
+.info-pair {
+  font-size: 14px;
+}
+.pop-hold {
+  position: absolute;
+  border-radius: 7px;
+  bottom: -12.5em;
+  background-color: var(--White);
+  width: 20em;
+  height: 12em;
+}
+.pop-hold > h3 {
+  padding: 0.7em;
+}
+.informatte {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.informatte img {
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 5px;
+}
+#delete {
+  width: 1em;
+  height: 1em;
+}
+main {
+  padding-top: 10em;
+  display: flex;
+  justify-content: space-between;
+}
+main .next-btn, main .previous-btn{
+  background-color: var(--White);
+  width: 2em;
+  height: 2em;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 50%;
+}
+.Gen-details {
+  position: relative;
+}
+.details-cont {
+  position: absolute;
+  z-index: -1;
+  background-color: white;
+  top: 15em;
+}
+.details-cont> p strong {
+  color: var(--range);
+  font-size: 14px;
+}
+.details-cont > h1 {
+  color: var(--Black);
+  padding-top: 0.5em;
+}
+.explanation p {
+  font-size: 14.5px;
+  line-height: 1.5em;
+  width: 21em;
+  color: var(--darkGrayishBlue);
+}
+.price,
+.price > div,
+.conter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.price > div span {
+  background-color: var(  --lightGrayishBlue);
+  color: var(--range);
+  text-align: center;
+  width: 2em;
+  /* height: 2em; */
+}
+.price > div p {
+  color: var(--grayishBlue);
+}
+
+.conter {
+  justify-content: space-around;
+  font-size: 1.6em;
+  background-color: var(--lightGrayishBlue);
+}
+.conter > .pinkky {
+  color: var(--range);
+}
+.add-to-cart-btn,
+#checkout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  width: 23em;
+  background-color: var(--range);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.check-div {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 1em;
+}
+#checkout {
+  width: 18em;
+  color: var(--White);
+  font-size: 1em;
+}
+
+.add-to-cart-btn:hover {
+  opacity: 0.7;
+}
+
+.cart-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  color: #fff;
+}
+
+.btn-text {
+  font-size: 16px;
+  color: #fff;
+}
+.image-wrapper,
+.image-wrapperCont,
+.image-wrapperHold,
+.image-choiceCont,
+.image-choiceHold {
+  display: none;
+}
+@media (min-width: 1000px) {
+  body {
+    padding: 2em;
+    font-family: "Kumbh Sans", sans-serif;
+    background-color: var(--White);
+    background-image: none;
+    background-position: center top 4.5em;
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+      height: 50em;
+  }
+  .profile > img {
+    width: 2.5em;
+    bottom: -0.4rem;
+  }
+  .profile > img:hover{
+    border: 2px solid var(--range);
+  }
+  nav {
+    padding-top: 1em;
+  }
+  .linyy {
+    border-bottom: 0.8px solid #d3d3d3;
+    width: 63em;
+    margin: 0.7em 4.8em;
+  }
+  .phase1 {
+    padding-right: 55em;
+    gap: 1em;
+  }
+  .li-dem{
+    gap: 1em;
+  }
+  .phase2 {
+    padding-right: 11em;
+  }
+  #logo-itself {
+    display: none;
+  }
+  .menu-cont {
+    display: flex;
+  }
+  .menu-hold {
+    position: absolute;
+    bottom: 5.5em;
+    right: 65em;
+  }
+  .close-btn {
+    display: none;
+  }
+  .lii-hold, .li-dem{
+    position: static;
+  }
+  .menu-hold ul,
+  .li-dem {
+    display: flex;
+    justify-content: space-evenly;
+    width: 3em;
+    height: 0;
+    /* margin-left: 10em; */
+  }
+  
+  .bordered {
+    position: relative;
+  }
+
+  .bordered:hover::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3.2em;
+    width: 100%;
+    border-bottom: 2px solid var(--range);
+  }
+  .menu-hold > ul li {
+    list-style: none;
+    font-weight: 1px;
+    font-size: 16px;
+    margin-right: 0;
+    /* padding-left: 2em; */
+    color: var(--grayishBlue);
+  }
+  .li-dem {
+    margin-top: 0;
+  }
+  main {
+    margin:1.5em 8em;
+    width: 29em;
+    height: 30em;
+  }
+  .image-wrapperCont,
+  .image-wrapperHold,
+  .image-wrapper,
+  .image-choiceCont,
+  .image-choiceHold{
+    display: block;
+  }
+  .image-wrapperCont, .image-choiceCont{
+    position: relative;
+  }
+  .image-wrapperHold {
+    position: absolute;
+    bottom: 8em;
+  }
+  .image-wrapper {
+    background-image: url("./images/image-product-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 24.2em;
+    border-radius: 10px;
+    height: 21em;
+    background-position: center;
+  }
+
+  .image-choiceHold{
+    position: absolute;
+    top: 14em;
+  }
+  .image-choice{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1em;
+    position: absolute;
+    left: -9.6em;
+  }
+  .image-choice > img{
+   width: 5.3em;
+   border-radius: 7px;
+  }
+  .details-cont > h1 {
+  font-size: 2.5em;
+  width: 12em;
+  padding-top: 0.4em;
+}
+.Gen-details{
+  position: relative;
+}
+.details-cont{
+  position: absolute;
+  z-index: 0;
+  /* background-color: ; */
+  top: -27em;
+  left: 40em;
+}
+.explanation p { width: 27em;}
+.inner-price, .flex-it {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.price{
+  display: block;
+}
+.price > div,
+.price > div span {
+  text-align: center;
+  width: 2em;
+}
+.price > div span{
+  background-color: var(--paleOrange);
+  color: var(--range);
+}
+.price > div p {
+  color: var(--grayishBlue);
+}
+
+.conter {
+  gap: 1.5em;
+  background-color: var(--lightGrayishBlue);
+}
+.conter > .pinkky {
+  color: var(--range);
+  
+}
+.add-to-cart-btn,
+#checkout {
+  width: 18em;
+  margin-right: 8em;
+}
+#checkout {
+  margin: 0;
+}
+main div{
+  background-color: #e8eeee;
+}
+.prev-hold, .next-hold{
+  position: relative;
+}
+.previous-btn, .next-btn{
+  position: absolute;
+}
+.previous-btn{
+  right: 18.7em; 
+}
+.next-btn{
+  right: 3.8em;
+}
+.pop-Cont{
+  z-index: 1;
+}
+.pop-hold {
+  position: absolute;
+  border-radius: 7px;
+  bottom: -11em;
+  left: 47em;
+  box-shadow: 2px 2px 5px 5px var(--lightGrayishBlue);
+  background-color: var(--White);
+  z-index: 2;
+    width: 20em;
+  height: 12em;
+}
+}
